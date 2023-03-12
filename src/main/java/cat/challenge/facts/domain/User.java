@@ -10,10 +10,6 @@ public class User {
     @JsonProperty("name")
     Name name;
 
-    public User(Name name) {
-        this.name = name;
-    }
-
     public String getUserId() {
         return userId;
     }

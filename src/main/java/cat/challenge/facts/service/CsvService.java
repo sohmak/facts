@@ -17,11 +17,15 @@ public class CsvService {
 
     public static void writeCsv(Map<String, Integer> map) throws Exception {
         List<String[]> lines = mapToList(map);
+        log.info("Trying to save the results to " + CSV_FILE);
         try (CSVWriter writer = new CSVWriter(new FileWriter(CSV_FILE))) {
             writer.writeNext(HEADER_ROW);
             for (String[] line : lines) {
                 writer.writeNext(line);
             }
+        } catch (Exception e){
+            log.error(e.getMessage(), e);
+            throw e;
         }
     }
 

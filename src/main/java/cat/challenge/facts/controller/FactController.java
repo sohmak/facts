@@ -22,10 +22,6 @@ public class FactController {
     @Autowired
     private FactsService factsService;
 
-//    public FactController(CatsApiClient catsApiClient) {
-//        this.catsApiClient = catsApiClient;
-//    }
-
     @GetMapping("facts/scoreBoard")
     public @ResponseBody Map<String, Integer> getUpvotesByUsers() throws Exception {
         final List<CatFact> factList = catsApiClient.getAllFacts();
@@ -33,6 +29,7 @@ public class FactController {
         Map<String, Integer> sortedFacts = factsService.sortByMostVotes(facts);
 
         writeCsv(sortedFacts);
-        return sortedFacts ;
+
+        return sortedFacts;
     }
 }

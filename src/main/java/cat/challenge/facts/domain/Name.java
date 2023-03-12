@@ -10,12 +10,10 @@ public class Name {
     @JsonProperty("last")
     String lastName;
 
-    public Name(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
 
-    public String getFirstName() {return firstName;}
+    public String getFirstName() {
+        return firstName;
+    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;

@@ -21,16 +21,23 @@ class FactsServiceTest {
     private FactsService service;
 
     private static List<CatFact> stubAllFacts() {
-        CatFact fact1 = new CatFact();
-        fact1.setUser(new User(new Name("Chandler", "Bing")));
-        fact1.setUpvotes(3);
-        CatFact fact2 = new CatFact();
-        fact2.setUser(new User(new Name("Ross", "Geller")));
-        fact2.setUpvotes(4);
-        CatFact fact3 = new CatFact();
-        fact3.setUser(new User(new Name("Chandler", "Bing")));
-        fact3.setUpvotes(3);
+        CatFact fact1 = stubFactFromUser("Chandler", "Bing", 4);
+        CatFact fact2 = stubFactFromUser("Ross", "Geller", 2);
+        CatFact fact3 = stubFactFromUser("Chandler", "Bing", 2);
+
         return List.of(fact1, fact2, fact3);
+    }
+
+    private static CatFact stubFactFromUser(String firstName, String lastName, int upvotes) {
+        CatFact fact = new CatFact();
+        Name chandler = new Name();
+        chandler.setFirstName(firstName);
+        chandler.setLastName(lastName);
+        User user1 = new User();
+        user1.setName(chandler);
+        fact.setUser(user1);
+        fact.setUpvotes(upvotes);
+        return fact;
     }
 
     private static Map<String, Integer> stubUserAndVoteMap() {
