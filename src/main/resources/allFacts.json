@@ -1,0 +1,60 @@
+{
+  "all": [
+    {
+      "_id": "58e008ad0aac31001185ed0c",
+      "text": "The frequency of a domestic cat's purr is the same at which muscles and bones repair themselves.",
+      "type": "cat",
+      "user": {
+        "_id": "58e007480aac31001185ecef",
+        "name": {
+          "first": "Kasimir",
+          "last": "Schulz"
+        }
+      },
+      "upvotes": 5,
+      "userUpvoted": null
+    },
+    {
+      "_id": "5887e1d85c873e0011036889",
+      "text": "Cats make about 100 different sounds. Dogs make only about 10.",
+      "type": "cat",
+      "user": {
+        "_id": "5887e9f65c873e001103688d",
+        "name": {
+          "first": "James",
+          "last": "Bond"
+        }
+      },
+      "upvotes": 11,
+      "userUpvoted": null
+    },
+    {
+      "_id": "58923f2fc3878c0011784c79",
+      "text": "I don't know anything about cats.",
+      "type": "cat",
+      "user": {
+        "_id": "58e007480aac31001185ecef",
+        "name": {
+          "first": "Kasimir",
+          "last": "Schulz"
+        }
+      },
+      "upvotes": 3,
+      "userUpvoted": null
+    },
+    {
+      "_id": "72923f2fc3878c0011784c79",
+      "text": "I don't know anything about cats2.",
+      "type": "cat",
+      "user": {
+        "_id": "1234007480aac31001185ecef",
+        "name": {
+          "first": "George",
+          "last": "Costanze"
+        }
+      },
+      "upvotes": 6,
+      "userUpvoted": null
+    }
+  ]
+}

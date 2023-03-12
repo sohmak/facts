@@ -10,6 +10,7 @@ public class Name {
     @JsonProperty("last")
     String lastName;
 
+
     public String getFirstName() {
         return firstName;
     }

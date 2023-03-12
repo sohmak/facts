@@ -14,8 +14,16 @@ public class User {
         return userId;
     }
 
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
     public Name getName() {
         return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
     }
 
 }
