@@ -22,42 +22,11 @@ public class FactsApplication {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(FactsApplication.class, args);
-//        List<CatFact> factList = catsApiClient.getAllFacts();
-//
-//        Map<String, Integer> result = factList.stream()
-//                .collect(Collectors
-//                        .groupingBy(fact -> fact.getUser().getName().toString(), Collectors.summingInt(CatFact::getUpvotes)));
-//
-//        Map<String, Integer> sortedResult = sortByMostVotes(result);
-//
-//        List<String[]> lines = new ArrayList<>();
-//        sortedResult.forEach((k, v) -> lines.add(new String[]{k, v.toString()}));
-//
-//        writeCsv(lines);
 
     }
 
 
-//
-//    @Bean
-//    public CommandLineRunner run() throws Exception {
-//        return args -> {
-//            List<CatFact> factList = catsApiClient.getAllFacts();
-//
-//            Map<String, Integer> result = factList.stream()
-//                    .collect(Collectors
-//                            .groupingBy(fact -> fact.getUser().getName().toString(), Collectors.summingInt(CatFact::getUpvotes)));
-//
-//            Map<String, Integer> sortedResult = sortByMostVotes(result);
-//
-//            List<String[]> lines = new ArrayList<>();
-//            sortedResult.forEach((k, v) -> lines.add(new String[]{k, v.toString()}));
-//
-//            writeCsv(lines);
-//
-//        };
-//
-//    }
+
 
 
 }
